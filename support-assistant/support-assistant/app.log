@@ -1,0 +1,36 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< org.example:support-assistant >--------------------
+[INFO] Building support-assistant 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.6.3:java (default-cli) @ support-assistant ---
+[WARNING] 
+java.lang.UnsupportedClassVersionError: com/example/supportassistant/SupportAssistantApplication has been compiled by a more recent version of the Java Runtime (class file version 69.0), this version of the Java Runtime only recognizes class file versions up to 65.0
+    at java.lang.ClassLoader.defineClass1 (Native Method)
+    at java.lang.ClassLoader.defineClass (ClassLoader.java:1027)
+    at java.security.SecureClassLoader.defineClass (SecureClassLoader.java:150)
+    at java.net.URLClassLoader.defineClass (URLClassLoader.java:524)
+    at java.net.URLClassLoader$1.run (URLClassLoader.java:427)
+    at java.net.URLClassLoader$1.run (URLClassLoader.java:421)
+    at java.security.AccessController.doPrivileged (AccessController.java:714)
+    at java.net.URLClassLoader.findClass (URLClassLoader.java:420)
+    at org.codehaus.mojo.exec.URLClassLoaderBuilder$ExecJavaClassLoader.loadClass (URLClassLoaderBuilder.java:186)
+    at java.lang.ClassLoader.loadClass (ClassLoader.java:526)
+    at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader (AbstractExecJavaBase.java:376)
+    at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0 (AbstractExecJavaBase.java:287)
+    at java.lang.Thread.run (Thread.java:1583)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.566 s
+[INFO] Finished at: 2026-08-15T18:12:49+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.6.3:java (default-cli) on project support-assistant: An exception occurred while executing the Java class. com/example/supportassistant/SupportAssistantApplication has been compiled by a more recent version of the Java Runtime (class file version 69.0), this version of the Java Runtime only recognizes class file versions up to 65.0 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
